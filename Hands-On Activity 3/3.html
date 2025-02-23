@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        
+        button {
+            width: 120px;
+            height: 50px;
+            background-color: rgb(5, 63, 236);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: rgb(20, 101, 206);
+        }
+        
+        #message {
+            font-size: 50px;
+            color: rgb(255, 1, 132);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="message">Click the button to change this text.</p>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("message").innerText = "Text changed!";
+        }
+    </script>
+
+</body>
+</html>
